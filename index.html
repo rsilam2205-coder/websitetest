@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indel Home Fix — One Stop Home Fix Solution Singapore</title>
+    
+    <link rel="icon" href="data:,">
+
+    <link href="https://fonts.googleapis.com/css2?family=Clash+Display:wght@400;500;600;700&family=Cabinet+Grotesk:wght@300;400;500;700;800&display=swap" rel="stylesheet">
 <title>Indel Home Fix — One Stop Home Fix Solution Singapore</title>
-<link href="https://fonts.googleapis.com/css2?family=Clash+Display:wght@400;500;600;700&family=Cabinet+Grotesk:wght@300;400;500;700;800&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
@@ -33,12 +37,10 @@ h1,h2,h3,h4{font-family:'Clash Display',sans-serif;line-height:1.1}
   text-decoration:none;transition:color 0.2s;
   font-weight:500;
 }
-
 .location-link a:hover{
   color:rgba(255, 255, 255, 0.6);
   text-decoration:underline;
 }
-
 
 /* ─── NAV ─── */
 nav{
@@ -78,7 +80,6 @@ nav.scrolled{background:rgba(10,10,15,0.94);backdrop-filter:blur(20px);border-bo
   position:relative;overflow:hidden;
   display:flex;align-items:center;padding:100px 6% 80px;
 }
-/* Geometric bg */
 .hero-geo{position:absolute;inset:0;pointer-events:none;overflow:hidden}
 .geo-circle1{
   position:absolute;top:-200px;right:-150px;
@@ -108,7 +109,6 @@ nav.scrolled{background:rgba(10,10,15,0.94);backdrop-filter:blur(20px);border-bo
 }
 .hero-grid{display:grid;grid-template-columns:1fr 420px;gap:80px;align-items:center;width:100%;position:relative;z-index:2}
 
-/* Animated tag */
 .live-tag{
   display:inline-flex;align-items:center;gap:9px;
   background:rgba(255,76,12,0.12);border:1px solid rgba(255,76,12,0.28);
@@ -125,11 +125,7 @@ nav.scrolled{background:rgba(10,10,15,0.94);backdrop-filter:blur(20px);border-bo
   margin-bottom:22px;letter-spacing:-0.03em;
   animation:fadeUp 0.7s 0.1s ease both;
 }
-.hero h1 .fire{
-  color:var(--fire);
-  display:inline-block;
-  position:relative;
-}
+.hero h1 .fire{color:var(--fire);display:inline-block;position:relative}
 .hero h1 .fire::after{
   content:'';position:absolute;left:0;bottom:-4px;right:0;height:3px;
   background:var(--fire);border-radius:2px;
@@ -160,7 +156,6 @@ nav.scrolled{background:rgba(10,10,15,0.94);backdrop-filter:blur(20px);border-bo
 }
 .btn-ghost:hover{background:rgba(255,255,255,0.06);border-color:rgba(255,255,255,0.5)}
 
-/* Hero stats bar */
 .hero-statsbar{
   display:flex;gap:1px;margin-top:56px;
   background:rgba(255,255,255,0.07);border-radius:16px;overflow:hidden;
@@ -175,7 +170,6 @@ nav.scrolled{background:rgba(10,10,15,0.94);backdrop-filter:blur(20px);border-bo
 .hstat-n{font-family:'Clash Display',sans-serif;font-size:30px;font-weight:700;color:var(--fire)}
 .hstat-l{font-size:11px;color:rgba(255,255,255,0.4);margin-top:4px;letter-spacing:0.04em;text-transform:uppercase}
 
-/* Hero card */
 .hero-card{
   background:rgba(255,255,255,0.04);
   border:1px solid rgba(255,255,255,0.1);border-radius:var(--rxl);
@@ -243,18 +237,12 @@ nav.scrolled{background:rgba(10,10,15,0.94);backdrop-filter:blur(20px);border-bo
 .section-h{font-size:clamp(2.2rem,3.5vw,3.2rem);color:var(--ink);margin-bottom:14px;letter-spacing:-0.02em}
 .section-sub{font-size:17px;color:var(--gray2);max-width:520px;margin-bottom:60px;line-height:1.7}
 
-.svc-grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:20px;
-}
-
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
 .svc-card{
   background:#fff;border-radius:var(--rl);padding:32px 28px;
   border:1px solid var(--mist);
   cursor:pointer;position:relative;overflow:hidden;
   transition:transform 0.3s cubic-bezier(0.34,1.56,0.64,1),box-shadow 0.3s,border-color 0.3s;
-  group:true;
 }
 .svc-card::before{
   content:'';position:absolute;inset:0;
@@ -303,10 +291,8 @@ nav.scrolled{background:rgba(10,10,15,0.94);backdrop-filter:blur(20px);border-bo
 .booking-section .section-eyebrow{color:var(--fire2)}
 .booking-section .section-h{color:#fff}
 .booking-section .section-sub{color:rgba(255,255,255,0.45)}
-
 .booking-wrap{display:grid;grid-template-columns:1fr 1.15fr;gap:70px;align-items:start}
 
-/* Left info panel */
 .booking-steps{display:flex;flex-direction:column;gap:0}
 .bstep{
   display:flex;gap:20px;align-items:flex-start;padding:24px 0;
@@ -336,7 +322,6 @@ nav.scrolled{background:rgba(10,10,15,0.94);backdrop-filter:blur(20px);border-bo
 }
 .offer-text{font-size:14px;color:rgba(255,255,255,0.6)}
 
-/* Booking form */
 .bform{
   background:#fff;border-radius:var(--rxl);padding:42px 38px;
   position:relative;overflow:hidden;
@@ -359,7 +344,6 @@ nav.scrolled{background:rgba(10,10,15,0.94);backdrop-filter:blur(20px);border-bo
 .fg input:focus,.fg select:focus,.fg textarea:focus{border-color:var(--fire);background:#fff}
 .fg textarea{resize:vertical;min-height:88px}
 
-/* Upload zone */
 .upload-zone{
   border:2px dashed var(--mist);border-radius:14px;
   padding:30px 20px;text-align:center;cursor:pointer;
@@ -431,7 +415,7 @@ nav.scrolled{background:rgba(10,10,15,0.94);backdrop-filter:blur(20px);border-bo
 .why-card::after{
   content:'';position:absolute;bottom:0;left:0;right:0;height:3px;
   background:linear-gradient(90deg,var(--fire),var(--fire2));
-  transform:scaleX(0);transform-origin:left;transition:transform 0.35s;
+  transform:scaleX(0);transform-origin:left;transition:transform(0.35s);
 }
 .why-card:hover{transform:translateY(-5px);box-shadow:0 20px 50px rgba(0,0,0,0.09)}
 .why-card:hover::after{transform:scaleX(1)}
@@ -518,10 +502,7 @@ footer{background:var(--ink);padding:70px 6% 30px;border-top:1px solid rgba(255,
 
 /* ─── LOCATION SECTION ─── */
 .location-section{padding:100px 6%;background:var(--cream)}
-.location-wrap{
-  display:grid;grid-template-columns:1fr 1.1fr;gap:60px;align-items:start;
-  margin-top:0;
-}
+.location-wrap{display:grid;grid-template-columns:1fr 1.1fr;gap:60px;align-items:start;margin-top:0}
 .loc-info{display:flex;flex-direction:column;gap:24px}
 .loc-card{
   background:#fff;border:1px solid var(--mist);border-radius:var(--rl);
@@ -569,9 +550,6 @@ footer{background:var(--ink);padding:70px 6% 30px;border-top:1px solid rgba(255,
 }
 .map-badge-dot{width:8px;height:8px;border-radius:50%;background:var(--fire);animation:blink 1.8s infinite;flex-shrink:0}
 
-@media(max-width:900px){.location-wrap{grid-template-columns:1fr}}
-
-/* WA float */
 .wa-float{
   position:fixed;bottom:30px;right:30px;z-index:900;
   width:60px;height:60px;border-radius:50%;background:#25D366;
@@ -583,7 +561,6 @@ footer{background:var(--ink);padding:70px 6% 30px;border-top:1px solid rgba(255,
 @keyframes wafloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
 .wa-float:hover{background:#1EBE5A;animation:none;transform:scale(1.1)}
 
-/* ─── RESPONSIVE ─── */
 @media(max-width:1024px){
   .hero-grid{grid-template-columns:1fr;gap:50px}
   .svc-grid{grid-template-columns:repeat(2,1fr)}
@@ -597,11 +574,11 @@ footer{background:var(--ink);padding:70px 6% 30px;border-top:1px solid rgba(255,
   .frow{grid-template-columns:1fr}
   nav .nav-links{display:none}
   .bform{padding:28px 22px}
+  .location-wrap{grid-template-columns:1fr}
 }
 </style>
 </head>
 <body>
-
 
 <nav id="mainNav">
   <a href="#" class="nav-logo">
@@ -659,7 +636,7 @@ footer{background:var(--ink);padding:70px 6% 30px;border-top:1px solid rgba(255,
         <div class="trust-item"><div class="trust-check">✓</div> Zero Hidden Charges — Ever</div>
         <div class="trust-item"><div class="trust-check">✓</div> New Customer 10% Off</div>
         <div class="card-divider"></div>
-        <div class="trust-item" style="align-items:flex-start"><div class="trust-check" style="margin-top:2px">📍</div><span class = "location-link"><a href="https://www.google.com/maps/place/3Sixty+Inspectors+Pte.+Ltd./@1.3302215,103.8946016,3a,75y,302.04h,95.46t/data=!3m7!1e1!3m5!1sAvhCV0Z1xzTaM1roA-Av4Q!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D-5.456545683896053%26panoid%3DAvhCV0Z1xzTaM1roA-Av4Q%26yaw%3D302.0387623529439!7i16384!8i8192!4m6!3m5!1s0x31da103fe1c3c8b9:0x92ac4340f66c5d1a!8m2!3d1.3302004!4d103.8943205!16s%2Fg%2F11c1wsbvdm?entry=ttu&g_ep=EgoyMDI2MDUyNy4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">3014 Ubi Road 1, #01-298, Kampong Ubi Industrial Estate, S 408702</a></span></div>
+        <div class="trust-item" style="align-items:flex-start"><div class="trust-check" style="margin-top:2px">📍</div><span class="location-link"><a href="https://www.google.com/maps/place/3Sixty+Inspectors+Pte.+Ltd./@1.3302215,103.8946016,3a,75y,302.04h,95.46t/data=!3m7!1e1!3m5!1sAvhCV0Z1xzTaM1roA-Av4Q!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D-5.456545683896053%26panoid%3DAvhCV0Z1xzTaM1roA-Av4Q%26yaw%3D302.0387623529439!7i16384!8i8192!4m6!3m5!1s0x31da103fe1c3c8b9:0x92ac4340f66c5d1a!8m2!3d1.3302004!4d103.8943205!16s%2Fg%2F11c1wsbvdm?entry=ttu&g_ep=EgoyMDI2MDUyNy4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">3014 Ubi Road 1, #01-298, Kampong Ubi Industrial Estate, S 408702</a></span></div>
       </div>
     </div>
   </div>
@@ -704,7 +681,7 @@ footer{background:var(--ink);padding:70px 6% 30px;border-top:1px solid rgba(255,
         <li class="svc-li">Toilet & Tap Repair</li>
         <li class="svc-li">Water Heater Service</li>
       </ul>
-      <button class="svc-book" onclick = "link.href = 'booking.html'">Book Plumbing →</button>
+      <button class="svc-book">Book Plumbing →</button>
     </div>
     <div class="svc-card" onclick="selectService('Cleaning')">
       <div class="svc-num">02</div>
@@ -717,7 +694,7 @@ footer{background:var(--ink);padding:70px 6% 30px;border-top:1px solid rgba(255,
         <li class="svc-li">Part-time Cleaning</li>
         <li class="svc-li">Post-renovation Cleaning</li>
       </ul>
-      <button class="svc-book" onclick = "link.href = 'booking.html'">Book Cleaning →</button>
+      <button class="svc-book">Book Cleaning →</button>
     </div>
     <div class="svc-card" onclick="selectService('Furniture Repair')">
       <div class="svc-num">03</div>
@@ -730,7 +707,7 @@ footer{background:var(--ink);padding:70px 6% 30px;border-top:1px solid rgba(255,
         <li class="svc-li">Hinge & Fitting Fix</li>
         <li class="svc-li">Custom Repair Work</li>
       </ul>
-      <button class="svc-book" onclick = "link.href = 'booking.html'">Book Furniture Repair →</button>
+      <button class="svc-book">Book Furniture Repair →</button>
     </div>
     <div class="svc-card" onclick="selectService('Windows & Curtains')">
       <div class="svc-num">04</div>
@@ -743,7 +720,7 @@ footer{background:var(--ink);padding:70px 6% 30px;border-top:1px solid rgba(255,
         <li class="svc-li">Day & Night Blinds</li>
         <li class="svc-li">Track & Rod Fixing</li>
       </ul>
-      <button class="svc-book" onclick = "link.href = 'booking.html'">Book Windows →</button>
+      <button class="svc-book">Book Windows →</button>
     </div>
     <div class="svc-card" onclick="selectService('Painting')">
       <div class="svc-num">05</div>
@@ -756,7 +733,7 @@ footer{background:var(--ink);padding:70px 6% 30px;border-top:1px solid rgba(255,
         <li class="svc-li">Color Consultation</li>
         <li class="svc-li">Feature Walls</li>
       </ul>
-      <button class="svc-book" onclick = "link.href = 'booking.html'">Book Painting →</button>
+      <button class="svc-book">Book Painting →</button>
     </div>
     <div class="svc-card" onclick="selectService('Flooring & Tiling')">
       <div class="svc-num">06</div>
@@ -769,7 +746,7 @@ footer{background:var(--ink);padding:70px 6% 30px;border-top:1px solid rgba(255,
         <li class="svc-li">Grouting & Repair</li>
         <li class="svc-li">Tile Replacement</li>
       </ul>
-      <button class="svc-book" onclick = "link.href = 'booking.html'">Book Flooring →</button>
+      <button class="svc-book">Book Flooring →</button>
     </div>
   </div>
 </section>
@@ -929,7 +906,6 @@ footer{background:var(--ink);padding:70px 6% 30px;border-top:1px solid rgba(255,
   <p class="section-sub" style="margin-bottom:50px">Come visit us or drop by anytime. We're conveniently located in the heart of Ubi Industrial Estate.</p>
   <div class="location-wrap">
     <div class="loc-info">
-
       <div class="loc-card">
         <div class="loc-icon">📍</div>
         <div>
@@ -939,7 +915,6 @@ footer{background:var(--ink);padding:70px 6% 30px;border-top:1px solid rgba(255,
           <a class="loc-link" href="https://www.google.com/maps/place/3Sixty+Inspectors+Pte.+Ltd./@1.3302215,103.8946016,3a,75y,302.04h,95.46t/data=!3m7!1e1!3m5!1sAvhCV0Z1xzTaM1roA-Av4Q!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D-5.456545683896053%26panoid%3DAvhCV0Z1xzTaM1roA-Av4Q%26yaw%3D302.0387623529439!7i16384!8i8192!4m6!3m5!1s0x31da103fe1c3c8b9:0x92ac4340f66c5d1a!8m2!3d1.3302004!4d103.8943205!16s%2Fg%2F11c1wsbvdm?entry=ttu&g_ep=EgoyMDI2MDUyNy4wIKXMDSoASAFQAw%3D%3D" target="_blank">Get Directions →</a>
         </div>
       </div>
-
       <div class="loc-card">
         <div class="loc-icon">🕐</div>
         <div>
@@ -948,7 +923,6 @@ footer{background:var(--ink);padding:70px 6% 30px;border-top:1px solid rgba(255,
           <div class="loc-sub">9:00 AM – 7:00 PM<br><span style="color:var(--fire);font-weight:600">24/7 Emergency Service Available</span></div>
         </div>
       </div>
-
       <div class="loc-card">
         <div class="loc-icon">🚇</div>
         <div>
@@ -956,8 +930,6 @@ footer{background:var(--ink);padding:70px 6% 30px;border-top:1px solid rgba(255,
           <div class="loc-main">Nearest MRT: Ubi (DT27)</div>
           <div class="loc-sub">5-minute walk from Ubi MRT Station.<br>Bus stop at Ubi Road 1 — Bus 65, 93, 158.</div>
         </div>
-      </div>
-      <div>
       </div>
     </div>
     
@@ -1010,7 +982,6 @@ footer{background:var(--ink);padding:70px 6% 30px;border-top:1px solid rgba(255,
         <li><a href="tel:+6580859950">📞 +65 8085 9950</a></li>
         <li><a href="https://wa.me/6580859950">💬 WhatsApp</a></li>
         <li><a href="#location" style="line-height:1.6">📍 3014 Ubi Road 1, #01-298<br><span style="padding-left:20px;display:block">Kampong Ubi Industrial Estate<br>Singapore 408702</span></a></li>
-
       </ul>
     </div>
   </div>
@@ -1023,13 +994,9 @@ footer{background:var(--ink);padding:70px 6% 30px;border-top:1px solid rgba(255,
 <a href="https://wa.me/6580859950" class="wa-float" title="Chat on WhatsApp" target="_blank">💬</a>
 
 <script>
-  // Replace with your operational Google Web App URL deployment
-const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxA-vwQJKXvemb9xIX08xDc2-5fctAfdvJsPtPuKFH7v0wZQtATLuKTEGZaXwlQJZx6/exec";
-
-// Global storage to track files uploaded by the user
+const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxBQscT2rsINzIZZsZFaRVKMcJKM-lC7mhEweqjfS5wFhmrvrJZGtwBKP-BT_XUgbUs/exec";
 let uploadedFilesArray = [];
 
-// Drag & drop behavior initialization
 const dropZone = document.getElementById('dropZ');
 ['dragenter', 'dragover'].forEach(eventName => {
   dropZone.addEventListener(eventName, (e) => { e.preventDefault(); dropZone.classList.add('drag'); }, false);
@@ -1050,7 +1017,6 @@ function selectService(svcName) {
   }
 }
 
-// Updated handleFiles function (Removes background conversion to prevent timing race conditions)
 function handleFiles(files) {
   const previewsContainer = document.getElementById('fpreviews');
   
@@ -1060,10 +1026,8 @@ function handleFiles(files) {
   }
 
   Array.from(files).forEach(file => {
-    // Generate a unique token for identifying individual items in our application array
     const fileId = Date.now() + '-' + Math.random().toString(36).substring(2, 9);
     
-    // We store the raw file object safely here; conversion happens only when clicking submit
     const fileObject = {
       id: fileId,
       name: file.name,
@@ -1074,7 +1038,6 @@ function handleFiles(files) {
     
     uploadedFilesArray.push(fileObject);
 
-    // Build the matching preview components
     const prevDiv = document.createElement('div');
     prevDiv.className = 'fprev';
     prevDiv.setAttribute('data-id', fileId);
@@ -1091,7 +1054,6 @@ function handleFiles(files) {
       prevDiv.innerHTML = `<span style="font-size:20px;">📄</span><span style="font-size:9px; text-align:center; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; width:100%;">${file.name}</span>`;
     }
 
-    // Add explicit close button for deleting item before submitting
     const removeBtn = document.createElement('button');
     removeBtn.className = 'fprev-x';
     removeBtn.innerHTML = '×';
@@ -1105,11 +1067,9 @@ function handleFiles(files) {
     previewsContainer.appendChild(prevDiv);
   });
   
-  // Clear field inputs so the same file selection can be safely repeated if deleted
   document.getElementById('fileIn').value = "";
 }
 
-// Helper utility function to cleanly convert individual files into strings using Promises
 function convertFileToBase64(file) {
   return new Promise((resolve, reject) => {
     const reader = new FileReader();
@@ -1119,70 +1079,79 @@ function convertFileToBase64(file) {
   });
 }
 
-// Updated doSubmit function (Forces the form transmission to pause until all imagery data is packed)
 async function doSubmit() {
   const submitBtn = document.getElementById('submitBtn');
-  
-  const nameVal = document.getElementById('f-name').value.trim();
-  const phoneVal = document.getElementById('f-phone').value.trim();
-  const serviceVal = document.getElementById('f-service').value;
-  const dateVal = document.getElementById('f-date').value;
-  const addressVal = document.getElementById('f-addr').value.trim();
-
-  if (!nameVal || !phoneVal || !serviceVal || !dateVal || !addressVal) {
-    alert("Please fill all required fields");
-    return;
-  }
-
-  // Prevent double transmission steps
-  submitBtn.disabled = true;
-  submitBtn.innerText = "⏳ Processing Request...";
+  if (submitBtn) submitBtn.disabled = true;
 
   try {
-    // CRITICAL TIMING FIX: Convert every single staged media file to base64 synchronously right here
-    const convertedFiles = await Promise.all(
-      uploadedFilesArray.map(async (f) => {
-        const base64 = await convertFileToBase64(f.rawFile);
-        return {
-          name: f.name,
-          type: f.type,
-          base64: base64
-        };
-      })
-    );
+    // 1. Safe mapping for uploaded files
+    let convertedFiles = [];
+    if (typeof uploadedFilesArray !== 'undefined' && uploadedFilesArray.length > 0) {
+      convertedFiles = await Promise.all(
+        uploadedFilesArray.map(async (f) => {
+          const base64 = await convertFileToBase64(f.rawFile);
+          return {
+            name: f.name,
+            type: f.type,
+            base64: base64
+          };
+        })
+      );
+    }
 
-    const booking = {
-      name: nameVal,
-      phone: phoneVal,
-      email: document.getElementById('f-email').value.trim(),
-      service: serviceVal,
-      date: dateVal,
-      time: document.getElementById('f-time').value,
-      address: addressVal,
-      description: document.getElementById('f-desc').value.trim(),
-      files: convertedFiles // Attach the fully converted media package safely here
+    // 2. Safely grab form values using fallback empty strings if an ID is missing
+    const getValue = (id) => {
+      const el = document.getElementById(id);
+      return el ? el.value : '';
     };
 
-    // Send payload smoothly to Google Apps Script bypassing cross-origin (CORS) roadblocks
-    await fetch(SCRIPT_URL, {
-      mode: "no-cors",
+    const booking = {
+      name: getValue('f-name'),
+      phone: getValue('f-phone'),
+      email: getValue('f-email'),
+      service: getValue('f-service'),
+      date: getValue('f-date'),
+      time: getValue('f-time'),
+      address: getValue('f-addr'),
+      description: getValue('f-desc'),
+      files: convertedFiles
+    };
+
+    // Quick validation check
+    if (!booking.name || !booking.phone || !booking.service || !booking.date || !booking.address) {
+      alert("Please fill in all required fields marked with an asterisk (*).");
+      if (submitBtn) submitBtn.disabled = false;
+      return;
+    }
+
+    // 3. Post to Google Web App using 'text/plain' to avoid 400 Bad Request drops
+    const response = await fetch(SCRIPT_URL, {
       method: "POST",
+      headers: {
+        "Content-Type": "text/plain;charset=utf-8" 
+      },
       body: JSON.stringify(booking)
     });
 
-    // Since 'no-cors' treats deliveries blindly, assume success once the fetch loop resolves
-    document.getElementById('formContent').style.display = 'none';
-    document.getElementById('successPanel').style.display = 'block';
+    // 4. Read the text response first to handle it safely
+    const responseText = await response.text();
+    const result = JSON.parse(responseText);
+
+    if (result.success) {
+      document.getElementById('formContent').style.display = 'none';
+      document.getElementById('successPanel').style.display = 'block';
+    } else {
+      alert("Backend Error: " + (result.error || "Unknown validation error"));
+      if (submitBtn) submitBtn.disabled = false;
+    }
 
   } catch (err) {
-    console.error(err);
-    alert("Thank you for your submisson! we will get back to you shortly. If you have any urgent concerns, please contact us directly on WhatsApp or phone.");
-    submitBtn.disabled = false;
-    submitBtn.innerText = "✅ Submit Booking Request";
+    console.error("Submission Error Details:", err);
+    alert("Thank you for your submission! If you do not receive a WhatsApp confirmation shortly, please contact us directly.");
+    if (submitBtn) submitBtn.disabled = false;
   }
 }
 
-// Basic navbar adjustment layout scripts
 window.addEventListener('scroll', () => {
   const nav = document.getElementById('mainNav');
   if(window.scrollY > 20) { nav.classList.add('scrolled'); }
@@ -1190,8 +1159,9 @@ window.addEventListener('scroll', () => {
 });
 </script>
 
+
 <script>
-  alert('live server worked');
+  alert('odfhdohfh')
 </script>
 </body>
 </html>
