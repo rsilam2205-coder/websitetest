@@ -601,9 +601,6 @@ footer{background:var(--ink);padding:70px 6% 30px;border-top:1px solid rgba(255,
 </head>
 <body>
 
-<!-- Custom cursor -->
-<div class="cursor" id="cur"></div>
-<div class="cursor-ring" id="curR"></div>
 
 <!-- NAV -->
 <nav id="mainNav">
@@ -709,7 +706,7 @@ footer{background:var(--ink);padding:70px 6% 30px;border-top:1px solid rgba(255,
         <li class="svc-li">Toilet &amp; Tap Repair</li>
         <li class="svc-li">Water Heater Service</li>
       </ul>
-      <button class="svc-book">Book Plumbing →</button>
+      <button class="svc-book" onclick = "location.href='#booking'">Book Plumbing →</button>
     </div>
     <div class="svc-card" onclick="selectService('Cleaning')">
       <div class="svc-num">02</div>
@@ -722,7 +719,7 @@ footer{background:var(--ink);padding:70px 6% 30px;border-top:1px solid rgba(255,
         <li class="svc-li">Part-time Cleaning</li>
         <li class="svc-li">Post-renovation Cleaning</li>
       </ul>
-      <button class="svc-book">Book Cleaning →</button>
+      <button class="svc-book" onclick = "location.href='#booking'">Book Cleaning →</button>
     </div>
     <div class="svc-card" onclick="selectService('Furniture Repair')">
       <div class="svc-num">03</div>
@@ -735,20 +732,22 @@ footer{background:var(--ink);padding:70px 6% 30px;border-top:1px solid rgba(255,
         <li class="svc-li">Hinge &amp; Fitting Fix</li>
         <li class="svc-li">Custom Repair Work</li>
       </ul>
-      <button class="svc-book">Book Furniture Repair →</button>
+      <button class="svc-book" onclick = "location.href='#booking'">Book Furniture Repair →</button>
     </div>
-    <div class="svc-card" onclick="selectService('Windows & Curtains')">
+    <div class="svc-card" onclick="selectService('Door Locks,Windows & Curtains')">
       <div class="svc-num">04</div>
       <div class="svc-icon-wrap ic-purple">🪟</div>
       <div class="svc-name">Windows &amp; Curtains</div>
       <ul class="svc-items">
+        <li class="svc-li">Door Lock Replacement, Hinges Replacement &amp; Repair</li>
+        <li class="svc-li">Window Repair & Installation</li>
         <li class="svc-li">Curtain Installation &amp; Repair</li>
         <li class="svc-li">Blinds Installation</li>
         <li class="svc-li">Roller Blinds</li>
         <li class="svc-li">Day &amp; Night Blinds</li>
         <li class="svc-li">Track &amp; Rod Fixing</li>
       </ul>
-      <button class="svc-book">Book Windows →</button>
+      <button class="svc-book" onclick = "location.href='#booking'">Book Windows →</button>
     </div>
     <div class="svc-card" onclick="selectService('Painting')">
       <div class="svc-num">05</div>
@@ -761,7 +760,7 @@ footer{background:var(--ink);padding:70px 6% 30px;border-top:1px solid rgba(255,
         <li class="svc-li">Color Consultation</li>
         <li class="svc-li">Feature Walls</li>
       </ul>
-      <button class="svc-book">Book Painting →</button>
+      <button class="svc-book" onclick = "location.href='#booking'">Book Painting →</button>
     </div>
     <div class="svc-card" onclick="selectService('Flooring & Tiling')">
       <div class="svc-num">06</div>
@@ -774,7 +773,7 @@ footer{background:var(--ink);padding:70px 6% 30px;border-top:1px solid rgba(255,
         <li class="svc-li">Grouting &amp; Repair</li>
         <li class="svc-li">Tile Replacement</li>
       </ul>
-      <button class="svc-book">Book Flooring →</button>
+      <button class="svc-book" onclick = "location.href='#booking'">Book Flooring →</button>
     </div>
   </div>
 </section>
@@ -946,7 +945,7 @@ footer{background:var(--ink);padding:70px 6% 30px;border-top:1px solid rgba(255,
           <div class="loc-label">Office Address</div>
           <div class="loc-main">3014 Ubi Road 1, #01-298</div>
           <div class="loc-sub">Kampong Ubi Industrial Estate<br>Singapore 408702</div>
-          <a class="loc-link" href="https://maps.google.com/?q=3014+Ubi+Road+1+Singapore+408702" target="_blank">Get Directions →</a>
+          <a class="loc-link" href="https://www.google.com/maps/place/3Sixty+Inspectors+Pte.+Ltd./@1.3302215,103.8946016,3a,75y,302.04h,95.46t/data=!3m7!1e1!3m5!1sAvhCV0Z1xzTaM1roA-Av4Q!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D-5.456545683896053%26panoid%3DAvhCV0Z1xzTaM1roA-Av4Q%26yaw%3D302.0387623529439!7i16384!8i8192!4m6!3m5!1s0x31da103fe1c3c8b9:0x92ac4340f66c5d1a!8m2!3d1.3302004!4d103.8943205!16s%2Fg%2F11c1wsbvdm?entry=ttu&g_ep=EgoyMDI2MDUyNy4wIKXMDSoASAFQAw%3D%3D" target="_blank">Get Directions →</a>
         </div>
       </div>
 
@@ -1037,85 +1036,72 @@ footer{background:var(--ink);padding:70px 6% 30px;border-top:1px solid rgba(255,
 <a href="https://wa.me/6580859950" class="wa-float" title="Chat on WhatsApp" target="_blank">💬</a>
 
 <script>
-// Cursor
-const cur=document.getElementById('cur'),curR=document.getElementById('curR');
-document.addEventListener('mousemove',e=>{
-  cur.style.left=e.clientX+'px';cur.style.top=e.clientY+'px';
-  setTimeout(()=>{curR.style.left=e.clientX+'px';curR.style.top=e.clientY+'px'},80);
-});
+const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxA-vwQJKXvemb9xIX08xDc2-5fctAfdvJsPtPuKFH7v0wZQtATLuKTEGZaXwlQJZx6/exec";
 
-// Nav scroll
-window.addEventListener('scroll',()=>{
-  document.getElementById('mainNav').classList.toggle('scrolled',window.scrollY>40);
-});
 
-// Date min
-const dateEl=document.getElementById('f-date');
-if(dateEl) dateEl.min=new Date().toISOString().split('T')[0];
+async function doSubmit() {
 
-// Service pre-select
-function selectService(name){
-  const s=document.getElementById('f-service');
-  for(let i=0;i<s.options.length;i++){
-    if(s.options[i].value===name||s.options[i].text===name){s.selectedIndex=i;break}
+  const Booking = {
+    name: document.getElementById('f-name').value.trim(),
+    // ADD THE SINGLE QUOTE HERE TO FORCE TEXT FORMATTING IN GOOGLE SHEETS
+    phone: "'" + document.getElementById('f-phone').value.trim(), 
+    email: document.getElementById('f-email').value.trim(),
+    service: document.getElementById('f-service').value,
+    date: document.getElementById('f-date').value,
+    time: document.getElementById('f-time').value,
+    address: document.getElementById('f-addr').value.trim(),
+    description: document.getElementById('f-desc').value.trim()
+  };
+
+  if (!Booking.name || !Booking.phone || !Booking.service || !Booking.date || !Booking.address) {
+    alert("Please fill all required fields");
+    return;
   }
-  document.getElementById('booking').scrollIntoView({behavior:'smooth'});
-}
+  
+  // ... rest of your doSubmit() function stays exactly the same
 
-// File upload
-let files=[];
-function handleFiles(fl){
-  for(const f of fl){if(files.length>=10)break;if(!files.find(x=>x.name===f.name))files.push(f)}
-  renderPreviews();
-}
-function renderPreviews(){
-  const c=document.getElementById('fpreviews');c.innerHTML='';
-  files.forEach((f,i)=>{
-    const d=document.createElement('div');d.className='fprev';
-    const btn=document.createElement('button');btn.className='fprev-x';btn.textContent='×';
-    btn.onclick=()=>{files.splice(i,1);renderPreviews()};
-    if(f.type.startsWith('image/')){
-      const img=document.createElement('img');img.src=URL.createObjectURL(f);d.appendChild(img);
-    } else if(f.type.startsWith('video/')){
-      const v=document.createElement('video');v.src=URL.createObjectURL(f);d.appendChild(v);
+
+
+  const booking = {
+    name: document.getElementById('f-name').value.trim(),
+    phone: document.getElementById('f-phone').value.trim(),
+    email: document.getElementById('f-email').value.trim(),
+    service: document.getElementById('f-service').value,
+    date: document.getElementById('f-date').value,
+    time: document.getElementById('f-time').value,
+    address: document.getElementById('f-addr').value.trim(),
+    description: document.getElementById('f-desc').value.trim()
+  };
+
+  if (!booking.name || !booking.phone || !booking.service || !booking.date || !booking.address) {
+    alert("Please fill all required fields");
+    return;
+  }
+
+  try {
+    const res = await fetch(SCRIPT_URL, {
+      method: "POST",
+      body: JSON.stringify(booking)
+    });
+
+    const data = await res.json();
+
+    if (data.success) {
+      document.getElementById('formContent').style.display = 'none';
+      document.getElementById('successPanel').style.display = 'block';
     } else {
-      d.classList.add('doc');
-      d.innerHTML='<span style="font-size:22px">📄</span><span>'+f.name.slice(0,12)+'</span>';
+      alert("Booking failed");
     }
-    d.appendChild(btn);c.appendChild(d);
-  });
-}
 
-// Drag & drop
-const dz=document.getElementById('dropZ');
-dz.addEventListener('dragover',e=>{e.preventDefault();dz.classList.add('drag')});
-dz.addEventListener('dragleave',()=>dz.classList.remove('drag'));
-dz.addEventListener('drop',e=>{e.preventDefault();dz.classList.remove('drag');handleFiles(e.dataTransfer.files)});
-
-// Submit
-function doSubmit(){
-  const name=document.getElementById('f-name').value.trim();
-  const phone=document.getElementById('f-phone').value.trim();
-  const svc=document.getElementById('f-service').value;
-  const date=document.getElementById('f-date').value;
-  const addr=document.getElementById('f-addr').value.trim();
-  if(!name||!phone||!svc||!date||!addr){
-    alert('Please fill in all required fields (Name, Phone, Service, Date, Address).');return;
+  } catch (err) {
+    console.error(err);
+    alert("Thank you for your submission! We will contact within 2 hours, if it an emergency please call or WhatsApp us directly at +65 8085 9950");
   }
-  document.getElementById('formContent').style.display='none';
-  document.getElementById('successPanel').style.display='block';
-  document.getElementById('booking').scrollIntoView({behavior:'smooth'});
 }
+</script>
 
-// Intersection observer for subtle entry animations
-const obs=new IntersectionObserver(entries=>{
-  entries.forEach(e=>{if(e.isIntersecting){e.target.style.opacity='1';e.target.style.transform='translateY(0)'}});
-},{threshold:0.1});
-document.querySelectorAll('.svc-card,.why-card,.tcard').forEach(el=>{
-  el.style.opacity='0';el.style.transform='translateY(30px)';
-  el.style.transition='opacity 0.6s ease, transform 0.6s ease';
-  obs.observe(el);
-});
+
+<script>
 </script>
 </body>
 </html>
