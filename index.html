@@ -385,6 +385,7 @@ nav.scrolled{background:rgba(10,10,15,0.94);backdrop-filter:blur(20px);border-bo
   position:absolute;top:3px;right:3px;
   width:18px;height:18px;border-radius:50%;background:rgba(0,0,0,0.6);color:#fff;
   border:none;cursor:pointer;font-size:11px;display:flex;align-items:center;justify-content:center;line-height:1;
+  z-index: 10;
 }
 
 .submit-btn{
@@ -396,7 +397,7 @@ nav.scrolled{background:rgba(10,10,15,0.94);backdrop-filter:blur(20px);border-bo
   box-shadow:0 6px 30px rgba(255,76,12,0.35);
 }
 .submit-btn:hover{transform:translateY(-2px);box-shadow:0 12px 40px rgba(255,76,12,0.5)}
-.submit-btn:active{transform:scale(0.99)}
+.submit-btn:disabled{background:var(--gray);box-shadow:none;cursor:not-allowed}
 .form-footer-note{text-align:center;font-size:12px;color:var(--gray);margin-top:12px}
 
 .success-panel{display:none;text-align:center;padding:32px 16px}
@@ -602,7 +603,6 @@ footer{background:var(--ink);padding:70px 6% 30px;border-top:1px solid rgba(255,
 <body>
 
 
-<!-- NAV -->
 <nav id="mainNav">
   <a href="#" class="nav-logo">
     <div class="nav-logo-mark">IH</div>
@@ -614,10 +614,10 @@ footer{background:var(--ink);padding:70px 6% 30px;border-top:1px solid rgba(255,
     <li><a href="#why">Why Us</a></li>
     <li><a href="#reviews">Reviews</a></li>
     <li><a href="#location">Our Office</a></li>
+  </ul>
   <a href="#booking" class="nav-pill">📋 Book a Service</a>
 </nav>
 
-<!-- HERO -->
 <section class="hero" id="home">
   <div class="hero-geo">
     <div class="geo-dot-grid"></div>
@@ -630,7 +630,7 @@ footer{background:var(--ink);padding:70px 6% 30px;border-top:1px solid rgba(255,
     <div>
       <div class="live-tag"><div class="live-dot"></div>Singapore Islandwide · 24/7</div>
       <h1>One Call,<br>We <span class="fire">Fix It All!</span></h1>
-      <p class="hero-sub">Reliable. Professional. Affordable. Complete home care — plumbing, cleaning, painting, flooring &amp; more. All under one trusted roof.</p>
+      <p class="hero-sub">Reliable. Professional. Affordable. Complete home care — plumbing, cleaning, painting, flooring & more. All under one trusted roof.</p>
       <div class="hero-btns">
         <a href="#booking" class="btn-fire">📋 Book Online Now</a>
         <a href="tel:+6580859950" class="btn-ghost">📞 +65 8085 9950</a>
@@ -654,7 +654,7 @@ footer{background:var(--ink);padding:70px 6% 30px;border-top:1px solid rgba(255,
       <div class="card-phone-note">Call or WhatsApp · Fast Response · Free Quote</div>
       <div class="card-divider"></div>
       <div class="trust-list">
-        <div class="trust-item"><div class="trust-check">✓</div> Licensed &amp; Insured Professionals</div>
+        <div class="trust-item"><div class="trust-check">✓</div> Licensed & Insured Professionals</div>
         <div class="trust-item"><div class="trust-check">✓</div> Quality Guaranteed on All Work</div>
         <div class="trust-item"><div class="trust-check">✓</div> Zero Hidden Charges — Ever</div>
         <div class="trust-item"><div class="trust-check">✓</div> New Customer 10% Off</div>
@@ -665,31 +665,29 @@ footer{background:var(--ink);padding:70px 6% 30px;border-top:1px solid rgba(255,
   </div>
 </section>
 
-<!-- MARQUEE -->
 <div class="marquee-wrap">
   <div class="marquee-track" id="mTrack">
     <div class="marquee-item">Plumbing</div>
     <div class="marquee-item">Cleaning</div>
     <div class="marquee-item">Furniture Repair</div>
-    <div class="marquee-item">Windows &amp; Curtains</div>
+    <div class="marquee-item">Windows & Curtains</div>
     <div class="marquee-item">Painting</div>
-    <div class="marquee-item">Flooring &amp; Tiling</div>
+    <div class="marquee-item">Flooring & Tiling</div>
     <div class="marquee-item">Emergency Service</div>
     <div class="marquee-item">Free Quote</div>
     <div class="marquee-item">Singapore Islandwide</div>
     <div class="marquee-item">Plumbing</div>
     <div class="marquee-item">Cleaning</div>
     <div class="marquee-item">Furniture Repair</div>
-    <div class="marquee-item">Windows &amp; Curtains</div>
+    <div class="marquee-item">Windows & Curtains</div>
     <div class="marquee-item">Painting</div>
-    <div class="marquee-item">Flooring &amp; Tiling</div>
+    <div class="marquee-item">Flooring & Tiling</div>
     <div class="marquee-item">Emergency Service</div>
     <div class="marquee-item">Free Quote</div>
     <div class="marquee-item">Singapore Islandwide</div>
   </div>
 </div>
 
-<!-- SERVICES -->
 <section class="services" id="services">
   <div class="section-eyebrow">What We Do</div>
   <h2 class="section-h">6 Expert Services.<br>1 Trusted Team.</h2>
@@ -700,85 +698,82 @@ footer{background:var(--ink);padding:70px 6% 30px;border-top:1px solid rgba(255,
       <div class="svc-icon-wrap ic-blue">🔧</div>
       <div class="svc-name">Plumbing</div>
       <ul class="svc-items">
-        <li class="svc-li">Pipe Installation &amp; Repair</li>
+        <li class="svc-li">Pipe Installation & Repair</li>
         <li class="svc-li">Leak Detection</li>
         <li class="svc-li">Drain Cleaning</li>
-        <li class="svc-li">Toilet &amp; Tap Repair</li>
+        <li class="svc-li">Toilet & Tap Repair</li>
         <li class="svc-li">Water Heater Service</li>
       </ul>
-      <button class="svc-book" onclick = "location.href='#booking'">Book Plumbing →</button>
+      <button class="svc-book">Book Plumbing →</button>
     </div>
     <div class="svc-card" onclick="selectService('Cleaning')">
       <div class="svc-num">02</div>
       <div class="svc-icon-wrap ic-green">🧹</div>
       <div class="svc-name">Cleaning</div>
       <ul class="svc-items">
-        <li class="svc-li">Home &amp; Deep Cleaning</li>
+        <li class="svc-li">Home & Deep Cleaning</li>
         <li class="svc-li">Move-in / Move-out</li>
         <li class="svc-li">Office Cleaning</li>
         <li class="svc-li">Part-time Cleaning</li>
         <li class="svc-li">Post-renovation Cleaning</li>
       </ul>
-      <button class="svc-book" onclick = "location.href='#booking'">Book Cleaning →</button>
+      <button class="svc-book">Book Cleaning →</button>
     </div>
     <div class="svc-card" onclick="selectService('Furniture Repair')">
       <div class="svc-num">03</div>
       <div class="svc-icon-wrap ic-orange">🛋️</div>
       <div class="svc-name">Furniture Repair</div>
       <ul class="svc-items">
-        <li class="svc-li">Sofa &amp; Chair Repair</li>
-        <li class="svc-li">Table &amp; Cabinet Repair</li>
+        <li class="svc-li">Sofa & Chair Repair</li>
+        <li class="svc-li">Table & Cabinet Repair</li>
         <li class="svc-li">Woodwork Repair</li>
-        <li class="svc-li">Hinge &amp; Fitting Fix</li>
+        <li class="svc-li">Hinge & Fitting Fix</li>
         <li class="svc-li">Custom Repair Work</li>
       </ul>
-      <button class="svc-book" onclick = "location.href='#booking'">Book Furniture Repair →</button>
+      <button class="svc-book">Book Furniture Repair →</button>
     </div>
-    <div class="svc-card" onclick="selectService('Door Locks,Windows & Curtains')">
+    <div class="svc-card" onclick="selectService('Windows & Curtains')">
       <div class="svc-num">04</div>
       <div class="svc-icon-wrap ic-purple">🪟</div>
-      <div class="svc-name">Windows &amp; Curtains</div>
+      <div class="svc-name">Windows & Curtains</div>
       <ul class="svc-items">
-        <li class="svc-li">Door Lock Replacement, Hinges Replacement &amp; Repair</li>
-        <li class="svc-li">Window Repair & Installation</li>
-        <li class="svc-li">Curtain Installation &amp; Repair</li>
+        <li class="svc-li">Curtain Installation & Repair</li>
         <li class="svc-li">Blinds Installation</li>
         <li class="svc-li">Roller Blinds</li>
-        <li class="svc-li">Day &amp; Night Blinds</li>
-        <li class="svc-li">Track &amp; Rod Fixing</li>
+        <li class="svc-li">Day & Night Blinds</li>
+        <li class="svc-li">Track & Rod Fixing</li>
       </ul>
-      <button class="svc-book" onclick = "location.href='#booking'">Book Windows →</button>
+      <button class="svc-book">Book Windows →</button>
     </div>
     <div class="svc-card" onclick="selectService('Painting')">
       <div class="svc-num">05</div>
       <div class="svc-icon-wrap ic-red">🎨</div>
       <div class="svc-name">Painting</div>
       <ul class="svc-items">
-        <li class="svc-li">Interior &amp; Exterior Painting</li>
+        <li class="svc-li">Interior & Exterior Painting</li>
         <li class="svc-li">Wall Touch-ups</li>
-        <li class="svc-li">Hacking &amp; Plaster</li>
+        <li class="svc-li">Hacking & Plaster</li>
         <li class="svc-li">Color Consultation</li>
         <li class="svc-li">Feature Walls</li>
       </ul>
-      <button class="svc-book" onclick = "location.href='#booking'">Book Painting →</button>
+      <button class="svc-book">Book Painting →</button>
     </div>
     <div class="svc-card" onclick="selectService('Flooring & Tiling')">
       <div class="svc-num">06</div>
       <div class="svc-icon-wrap ic-yellow">🏗️</div>
-      <div class="svc-name">Flooring &amp; Tiling</div>
+      <div class="svc-name">Flooring & Tiling</div>
       <ul class="svc-items">
-        <li class="svc-li">Floor &amp; Wall Tiling</li>
+        <li class="svc-li">Floor & Wall Tiling</li>
         <li class="svc-li">Vinyl Flooring</li>
         <li class="svc-li">Laminate Flooring</li>
-        <li class="svc-li">Grouting &amp; Repair</li>
+        <li class="svc-li">Grouting & Repair</li>
         <li class="svc-li">Tile Replacement</li>
       </ul>
-      <button class="svc-book" onclick = "location.href='#booking'">Book Flooring →</button>
+      <button class="svc-book">Book Flooring →</button>
     </div>
   </div>
 </section>
 
-<!-- BOOKING -->
 <section class="booking-section" id="booking">
   <div class="section-eyebrow">Online Booking</div>
   <h2 class="section-h">Book Your Service Online</h2>
@@ -788,7 +783,7 @@ footer{background:var(--ink);padding:70px 6% 30px;border-top:1px solid rgba(255,
       <div class="booking-steps">
         <div class="bstep">
           <div class="bstep-num">1</div>
-          <div><div class="bstep-title">Choose Your Service</div><div class="bstep-desc">Select from 6 expert services. Mix &amp; match for a bundle discount.</div></div>
+          <div><div class="bstep-title">Choose Your Service</div><div class="bstep-desc">Select from 6 expert services. Mix & match for a bundle discount.</div></div>
         </div>
         <div class="bstep">
           <div class="bstep-num">2</div>
@@ -796,7 +791,7 @@ footer{background:var(--ink);padding:70px 6% 30px;border-top:1px solid rgba(255,
         </div>
         <div class="bstep">
           <div class="bstep-num">3</div>
-          <div><div class="bstep-title">Pick Date &amp; Time</div><div class="bstep-desc">7 days a week, including public holidays. Same-day &amp; emergency slots available.</div></div>
+          <div><div class="bstep-title">Pick Date & Time</div><div class="bstep-desc">7 days a week, including public holidays. Same-day & emergency slots available.</div></div>
         </div>
         <div class="bstep">
           <div class="bstep-num">4</div>
@@ -826,9 +821,9 @@ footer{background:var(--ink);padding:70px 6% 30px;border-top:1px solid rgba(255,
             <option>Plumbing</option>
             <option>Cleaning</option>
             <option>Furniture Repair</option>
-            <option value="Windows & Curtains">Windows &amp; Curtains</option>
+            <option value="Windows & Curtains">Windows & Curtains</option>
             <option>Painting</option>
-            <option value="Flooring & Tiling">Flooring &amp; Tiling</option>
+            <option value="Flooring & Tiling">Flooring & Tiling</option>
             <option value="Multiple Services">Multiple Services (Bundle)</option>
           </select>
         </div>
@@ -852,13 +847,13 @@ footer{background:var(--ink);padding:70px 6% 30px;border-top:1px solid rgba(255,
           <div class="upload-zone" id="dropZ">
             <input type="file" id="fileIn" multiple accept="image/*,video/*,.pdf" onchange="handleFiles(this.files)">
             <span class="upload-icon-big">📎</span>
-            <div class="upload-hl">Drag &amp; drop or click to upload</div>
-            <div class="upload-note">Helps us prepare the right tools &amp; team</div>
+            <div class="upload-hl">Drag & drop or click to upload</div>
+            <div class="upload-note">Helps us prepare the right tools & team</div>
             <div class="upload-accept">JPG · PNG · MP4 · MOV · PDF · Max 10 files</div>
           </div>
           <div class="fpreviews" id="fpreviews"></div>
         </div>
-        <button class="submit-btn" onclick="doSubmit()">✅ Submit Booking Request</button>
+        <button class="submit-btn" id="submitBtn" onclick="doSubmit()">✅ Submit Booking Request</button>
         <div class="form-footer-note">Confirmed via WhatsApp in 30 mins · No payment needed now</div>
       </div>
       <div class="success-panel" id="successPanel">
@@ -871,13 +866,12 @@ footer{background:var(--ink);padding:70px 6% 30px;border-top:1px solid rgba(255,
   </div>
 </section>
 
-<!-- WHY US -->
 <section class="why" id="why">
   <div class="section-eyebrow">Why Choose Us</div>
   <h2 class="section-h" style="margin-bottom:16px">Your Home. Our Priority.</h2>
   <p class="section-sub">What sets us apart from every other home services provider in Singapore.</p>
   <div class="why-grid">
-    <div class="why-card"><span class="why-emoji">🏅</span><div class="why-h">Licensed &amp; Insured</div><p class="why-p">All our technicians are fully certified, background-checked, and covered by insurance for complete peace of mind.</p></div>
+    <div class="why-card"><span class="why-emoji">🏅</span><div class="why-h">Licensed & Insured</div><p class="why-p">All our technicians are fully certified, background-checked, and covered by insurance for complete peace of mind.</p></div>
     <div class="why-card"><span class="why-emoji">⚡</span><div class="why-h">24/7 Emergency</div><p class="why-p">Burst pipe at 3am? We're always here. Emergency team available every single day of the year.</p></div>
     <div class="why-card"><span class="why-emoji">💰</span><div class="why-h">Transparent Pricing</div><p class="why-p">Free quotes, upfront pricing, absolutely zero hidden charges. You know exactly what you pay before we start.</p></div>
     <div class="why-card"><span class="why-emoji">🏠</span><div class="why-h">One-Stop Solution</div><p class="why-p">Six services, one trusted company. No juggling multiple contractors — we handle everything seamlessly.</p></div>
@@ -886,7 +880,6 @@ footer{background:var(--ink);padding:70px 6% 30px;border-top:1px solid rgba(255,
   </div>
 </section>
 
-<!-- TESTIMONIALS -->
 <section class="testi" id="reviews">
   <div class="section-eyebrow">Customer Reviews</div>
   <h2 class="section-h" style="margin-bottom:14px">Trusted Across Singapore</h2>
@@ -919,7 +912,6 @@ footer{background:var(--ink);padding:70px 6% 30px;border-top:1px solid rgba(255,
   </div>
 </section>
 
-<!-- CTA BAND -->
 <div class="cta-band">
   <div>
     <h2 class="cta-h">Ready to Fix Your Home?</h2>
@@ -931,7 +923,6 @@ footer{background:var(--ink);padding:70px 6% 30px;border-top:1px solid rgba(255,
   </div>
 </div>
 
-<!-- LOCATION -->
 <section class="location-section" id="location">
   <div class="section-eyebrow">Find Us</div>
   <h2 class="section-h" style="margin-bottom:14px">Our Office Location</h2>
@@ -966,12 +957,10 @@ footer{background:var(--ink);padding:70px 6% 30px;border-top:1px solid rgba(255,
           <div class="loc-sub">5-minute walk from Ubi MRT Station.<br>Bus stop at Ubi Road 1 — Bus 65, 93, 158.</div>
         </div>
       </div>
-        <div>
-        </div>
+      <div>
       </div>
-
     </div>
-
+    
     <div class="map-embed">
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.7423!2d103.8932!3d1.3267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da181d7c5ac275%3A0x1!2s3014+Ubi+Road+1%2C+Singapore+408702!5e0!3m2!1sen!2ssg!4v1"
@@ -986,7 +975,6 @@ footer{background:var(--ink);padding:70px 6% 30px;border-top:1px solid rgba(255,
   </div>
 </section>
 
-<!-- FOOTER -->
 <footer>
   <div class="footer-grid">
     <div class="footer-about">
@@ -1002,9 +990,9 @@ footer{background:var(--ink);padding:70px 6% 30px;border-top:1px solid rgba(255,
         <li><a href="#services">Plumbing</a></li>
         <li><a href="#services">Cleaning</a></li>
         <li><a href="#services">Furniture Repair</a></li>
-        <li><a href="#services">Windows &amp; Curtains</a></li>
+        <li><a href="#services">Windows & Curtains</a></li>
         <li><a href="#services">Painting</a></li>
-        <li><a href="#services">Flooring &amp; Tiling</a></li>
+        <li><a href="#services">Flooring & Tiling</a></li>
       </ul>
     </div>
     <div class="fcol">
@@ -1032,76 +1020,178 @@ footer{background:var(--ink);padding:70px 6% 30px;border-top:1px solid rgba(255,
   </div>
 </footer>
 
-<!-- WhatsApp Float -->
 <a href="https://wa.me/6580859950" class="wa-float" title="Chat on WhatsApp" target="_blank">💬</a>
 
 <script>
+  // Replace with your operational Google Web App URL deployment
 const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxA-vwQJKXvemb9xIX08xDc2-5fctAfdvJsPtPuKFH7v0wZQtATLuKTEGZaXwlQJZx6/exec";
 
+// Global storage to track files uploaded by the user
+let uploadedFilesArray = [];
 
-async function doSubmit() {
+// Drag & drop behavior initialization
+const dropZone = document.getElementById('dropZ');
+['dragenter', 'dragover'].forEach(eventName => {
+  dropZone.addEventListener(eventName, (e) => { e.preventDefault(); dropZone.classList.add('drag'); }, false);
+});
+['dragleave', 'drop'].forEach(eventName => {
+  dropZone.addEventListener(eventName, (e) => { e.preventDefault(); dropZone.classList.remove('drag'); }, false);
+});
+dropZone.addEventListener('drop', (e) => {
+  const dt = e.dataTransfer;
+  if(dt && dt.files) { handleFiles(dt.files); }
+});
 
-  const Booking = {
-    name: document.getElementById('f-name').value.trim(),
-    // ADD THE SINGLE QUOTE HERE TO FORCE TEXT FORMATTING IN GOOGLE SHEETS
-    phone: "'" + document.getElementById('f-phone').value.trim(), 
-    email: document.getElementById('f-email').value.trim(),
-    service: document.getElementById('f-service').value,
-    date: document.getElementById('f-date').value,
-    time: document.getElementById('f-time').value,
-    address: document.getElementById('f-addr').value.trim(),
-    description: document.getElementById('f-desc').value.trim()
-  };
-
-  if (!Booking.name || !Booking.phone || !Booking.service || !Booking.date || !Booking.address) {
-    alert("Please fill all required fields");
-    return;
+function selectService(svcName) {
+  const selectEl = document.getElementById('f-service');
+  if(selectEl) {
+    selectEl.value = svcName;
+    window.location.hash = "booking";
   }
+}
+
+// Updated handleFiles function (Removes background conversion to prevent timing race conditions)
+function handleFiles(files) {
+  const previewsContainer = document.getElementById('fpreviews');
   
-  // ... rest of your doSubmit() function stays exactly the same
+  if (uploadedFilesArray.length + files.length > 10) {
+    alert("You can upload a maximum of 10 files.");
+    return;
+  }
 
+  Array.from(files).forEach(file => {
+    // Generate a unique token for identifying individual items in our application array
+    const fileId = Date.now() + '-' + Math.random().toString(36).substring(2, 9);
+    
+    // We store the raw file object safely here; conversion happens only when clicking submit
+    const fileObject = {
+      id: fileId,
+      name: file.name,
+      type: file.type,
+      rawFile: file,
+      base64Data: null
+    };
+    
+    uploadedFilesArray.push(fileObject);
 
+    // Build the matching preview components
+    const prevDiv = document.createElement('div');
+    prevDiv.className = 'fprev';
+    prevDiv.setAttribute('data-id', fileId);
 
-  const booking = {
-    name: document.getElementById('f-name').value.trim(),
-    phone: document.getElementById('f-phone').value.trim(),
-    email: document.getElementById('f-email').value.trim(),
-    service: document.getElementById('f-service').value,
-    date: document.getElementById('f-date').value,
-    time: document.getElementById('f-time').value,
-    address: document.getElementById('f-addr').value.trim(),
-    description: document.getElementById('f-desc').value.trim()
-  };
+    if (file.type.startsWith('image/')) {
+      const img = document.createElement('img');
+      img.src = URL.createObjectURL(file);
+      prevDiv.appendChild(img);
+    } else if (file.type.startsWith('video/')) {
+      prevDiv.classList.add('doc');
+      prevDiv.innerHTML = `<span style="font-size:20px;">🎥</span><span style="font-size:9px; text-align:center; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; width:100%;">${file.name}</span>`;
+    } else {
+      prevDiv.classList.add('doc');
+      prevDiv.innerHTML = `<span style="font-size:20px;">📄</span><span style="font-size:9px; text-align:center; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; width:100%;">${file.name}</span>`;
+    }
 
-  if (!booking.name || !booking.phone || !booking.service || !booking.date || !booking.address) {
+    // Add explicit close button for deleting item before submitting
+    const removeBtn = document.createElement('button');
+    removeBtn.className = 'fprev-x';
+    removeBtn.innerHTML = '×';
+    removeBtn.onclick = function(e) {
+      e.stopPropagation();
+      e.preventDefault();
+      uploadedFilesArray = uploadedFilesArray.filter(f => f.id !== fileId);
+      prevDiv.remove();
+    };
+    prevDiv.appendChild(removeBtn);
+    previewsContainer.appendChild(prevDiv);
+  });
+  
+  // Clear field inputs so the same file selection can be safely repeated if deleted
+  document.getElementById('fileIn').value = "";
+}
+
+// Helper utility function to cleanly convert individual files into strings using Promises
+function convertFileToBase64(file) {
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.onload = () => resolve(reader.result.split(',')[1]);
+    reader.onerror = error => reject(error);
+    reader.readAsDataURL(file);
+  });
+}
+
+// Updated doSubmit function (Forces the form transmission to pause until all imagery data is packed)
+async function doSubmit() {
+  const submitBtn = document.getElementById('submitBtn');
+  
+  const nameVal = document.getElementById('f-name').value.trim();
+  const phoneVal = document.getElementById('f-phone').value.trim();
+  const serviceVal = document.getElementById('f-service').value;
+  const dateVal = document.getElementById('f-date').value;
+  const addressVal = document.getElementById('f-addr').value.trim();
+
+  if (!nameVal || !phoneVal || !serviceVal || !dateVal || !addressVal) {
     alert("Please fill all required fields");
     return;
   }
+
+  // Prevent double transmission steps
+  submitBtn.disabled = true;
+  submitBtn.innerText = "⏳ Processing Request...";
 
   try {
-    const res = await fetch(SCRIPT_URL, {
+    // CRITICAL TIMING FIX: Convert every single staged media file to base64 synchronously right here
+    const convertedFiles = await Promise.all(
+      uploadedFilesArray.map(async (f) => {
+        const base64 = await convertFileToBase64(f.rawFile);
+        return {
+          name: f.name,
+          type: f.type,
+          base64: base64
+        };
+      })
+    );
+
+    const booking = {
+      name: nameVal,
+      phone: phoneVal,
+      email: document.getElementById('f-email').value.trim(),
+      service: serviceVal,
+      date: dateVal,
+      time: document.getElementById('f-time').value,
+      address: addressVal,
+      description: document.getElementById('f-desc').value.trim(),
+      files: convertedFiles // Attach the fully converted media package safely here
+    };
+
+    // Send payload smoothly to Google Apps Script bypassing cross-origin (CORS) roadblocks
+    await fetch(SCRIPT_URL, {
+      mode: "no-cors",
       method: "POST",
       body: JSON.stringify(booking)
     });
 
-    const data = await res.json();
-
-    if (data.success) {
-      document.getElementById('formContent').style.display = 'none';
-      document.getElementById('successPanel').style.display = 'block';
-    } else {
-      alert("Booking failed");
-    }
+    // Since 'no-cors' treats deliveries blindly, assume success once the fetch loop resolves
+    document.getElementById('formContent').style.display = 'none';
+    document.getElementById('successPanel').style.display = 'block';
 
   } catch (err) {
     console.error(err);
-    alert("Thank you for your submission! We will contact within 2 hours, if it an emergency please call or WhatsApp us directly at +65 8085 9950");
+    alert("Error submitting booking request. Please check internet connections.");
+    submitBtn.disabled = false;
+    submitBtn.innerText = "✅ Submit Booking Request";
   }
 }
+
+// Basic navbar adjustment layout scripts
+window.addEventListener('scroll', () => {
+  const nav = document.getElementById('mainNav');
+  if(window.scrollY > 20) { nav.classList.add('scrolled'); }
+  else { nav.classList.remove('scrolled'); }
+});
 </script>
 
-
 <script>
+  alert('live server worked');
 </script>
 </body>
 </html>
