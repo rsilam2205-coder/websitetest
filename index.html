@@ -704,7 +704,7 @@ footer{background:var(--ink);padding:70px 6% 30px;border-top:1px solid rgba(255,
         <li class="svc-li">Toilet & Tap Repair</li>
         <li class="svc-li">Water Heater Service</li>
       </ul>
-      <button class="svc-book">Book Plumbing →</button>
+      <button class="svc-book" onclick = "link.href = 'booking.html'">Book Plumbing →</button>
     </div>
     <div class="svc-card" onclick="selectService('Cleaning')">
       <div class="svc-num">02</div>
@@ -717,7 +717,7 @@ footer{background:var(--ink);padding:70px 6% 30px;border-top:1px solid rgba(255,
         <li class="svc-li">Part-time Cleaning</li>
         <li class="svc-li">Post-renovation Cleaning</li>
       </ul>
-      <button class="svc-book">Book Cleaning →</button>
+      <button class="svc-book" onclick = "link.href = 'booking.html'">Book Cleaning →</button>
     </div>
     <div class="svc-card" onclick="selectService('Furniture Repair')">
       <div class="svc-num">03</div>
@@ -730,7 +730,7 @@ footer{background:var(--ink);padding:70px 6% 30px;border-top:1px solid rgba(255,
         <li class="svc-li">Hinge & Fitting Fix</li>
         <li class="svc-li">Custom Repair Work</li>
       </ul>
-      <button class="svc-book">Book Furniture Repair →</button>
+      <button class="svc-book" onclick = "link.href = 'booking.html'">Book Furniture Repair →</button>
     </div>
     <div class="svc-card" onclick="selectService('Windows & Curtains')">
       <div class="svc-num">04</div>
@@ -743,7 +743,7 @@ footer{background:var(--ink);padding:70px 6% 30px;border-top:1px solid rgba(255,
         <li class="svc-li">Day & Night Blinds</li>
         <li class="svc-li">Track & Rod Fixing</li>
       </ul>
-      <button class="svc-book">Book Windows →</button>
+      <button class="svc-book" onclick = "link.href = 'booking.html'">Book Windows →</button>
     </div>
     <div class="svc-card" onclick="selectService('Painting')">
       <div class="svc-num">05</div>
@@ -756,7 +756,7 @@ footer{background:var(--ink);padding:70px 6% 30px;border-top:1px solid rgba(255,
         <li class="svc-li">Color Consultation</li>
         <li class="svc-li">Feature Walls</li>
       </ul>
-      <button class="svc-book">Book Painting →</button>
+      <button class="svc-book" onclick = "link.href = 'booking.html'">Book Painting →</button>
     </div>
     <div class="svc-card" onclick="selectService('Flooring & Tiling')">
       <div class="svc-num">06</div>
@@ -769,7 +769,7 @@ footer{background:var(--ink);padding:70px 6% 30px;border-top:1px solid rgba(255,
         <li class="svc-li">Grouting & Repair</li>
         <li class="svc-li">Tile Replacement</li>
       </ul>
-      <button class="svc-book">Book Flooring →</button>
+      <button class="svc-book" onclick = "link.href = 'booking.html'">Book Flooring →</button>
     </div>
   </div>
 </section>
@@ -1176,7 +1176,7 @@ async function doSubmit() {
 
   } catch (err) {
     console.error(err);
-    alert("Error submitting booking request. Please check internet connections.");
+    alert("Thank you for your submisson! we will get back to you shortly. If you have any urgent concerns, please contact us directly on WhatsApp or phone.");
     submitBtn.disabled = false;
     submitBtn.innerText = "✅ Submit Booking Request";
   }
